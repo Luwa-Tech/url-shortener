@@ -31,7 +31,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/Luwa-Tech/url-shortener]
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://luwa-url-shortener-app.netlify.app/]
 
 ### Built with
 
