@@ -1,13 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+  <script src="https://unpkg.com/clipboard@2/dist/clipboard.min.js"></script>
+  <script src="app.js" type="module" defer></script>
+  <title>Url shortener/title>
+</head>
+<body>
+  <header>
+    <div class="content-container row">
+      <a href="#">
+        <img class="logo" src="/images/logo.svg" alt="url shortener logo">
+      </a>
+      <nav class="navigation">
+          <ul class="nav-list nav-about">
+            <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Resources</a></li>
+          </ul>
+          <span class="nav--line-break"></span>
+          <ul class="nav-list nav-form">
+            <li class="nav-item"><a href="#" class="nav-link">Login</a></li>
+            <li class="nav-item nav--signup-button"><a href="#" class="nav-link ">Sign Up</a></li>
+          </ul>
+      </nav>
+      <div class="mobile-navigation-toggle">
+        <img src="/images/menu_FILL0_wght400_GRAD0_opsz48.svg" alt="mobile navigation">
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero-section">
+      <div class="content-container hero">
+        <img class="hero-image" src="/images/illustration-working.svg" alt="working example">
+        <article class="hero-article">
+          <h1>More than just shorter links</h1>
+          <p>
+            Build your brand’s recognition and get detailed insights 
+            on how your links are performing.
+          </p>
+      
+            <a href="#"><button class="hero-button">Get Started</button></a>
+
+        </article>
+      </div>
+    </section>
+
+    <section id="client-section">
+      <div class="content-container client">
+        <section id="user-input-section">
+          <form id="form">
+            <div class="user-input-container">
+              <input class="input" type="text" placeholder="Shorten a link here...">
+              <input type="submit" value="Shorten It!" id="input-button">
+            </div>
+          </form>
+        </section>
+
+        <section class="url-list-section">
+          <ul id="parent" class="url-list"></ul>
+        </section>
+
+        <section class="brand-specifics">
+          <h2>Advanced Statistics</h2>
+          <p>Track how your links are performing across the web with our 
+            advanced statistics dashboard.</p>
+        </section>
+
+        <section class="brand-services">
+          <article>
+            <div class="brand-icons">
+              <img src="/images/icon-brand-recognition.svg">
+            </div>
+            <h3>Brand Recognition</h3>
+            <p>Boost your brand recognition with each click. Generic links don’t 
+              mean a thing. Branded links help instil confidence in your content.</p>
+          </article>
+          <article class="second-child">
+            <div class="brand-icons">
+              <img src="/images/icon-detailed-records.svg">
+            </div>
+            <h3>Detailed Records</h3>
+            <p>Gain insights into who is clicking your links. Knowing when and where 
+              people engage with your content helps inform better decisions.
+            </p>
+          </article>
+          <article>
+            <div class="brand-icons">
+              <img src="/images/icon-fully-customizable.svg">
+            </div>
+            <h3>Fully Customizable</h3>
+            <p>Improve brand awareness and content discoverability through   customizable 
+              links, supercharging audience engagement.
+            </p>
+          </article>
+        </section>
+      </div>
+    </section>
+
+    <section id="promotion-section">
+      <div>
+        <h2>Boost your links today</h2>
+        <a href="#">
+          <button id="promotion-button">Get Started</button>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer-section">
+    <div class="content-container footer">
+      <img class="footer-logo" src="/images/logo.svg" alt="url shortener logo">
+      <section>
+        <h3>Features</h3>
+        <div>
+          <p>Link Shortening</p>
+          <p>Branded Links</p>
+          <p>Analytics</p>
+        </div>
+      </section>
+
+      <section>
+        <h3>Resources</h3>
+        <div>
+          <p>Blog</p>
+          <p>Developers</p>
+          <p>Support</p>
+        </div>
+      </section>
+
+      <section>
+        <h3>Company</h3>
+        <div>
+          <p>About</p>
+          <p>Our Team</p>
+          <p>Contact</p>
+        </div>
+      </section>
+
+      <section class="icons-section">
+        <img src="/images/icon-facebook.svg">
+        <img src="/images/icon-twitter.svg">
+        <img src="/images/icon-pinterest.svg">
+        <img src="/images/icon-instagram.svg">
+      </section>
+    </div>
+  </footer>
+
+</body>
 </html>
