@@ -73,12 +73,12 @@ button {
 }
 
 /* sign up button check */
-/* .nav--signup-button {
+.nav--signup-button:focus {
   background-color: var(--cyan);
   padding: 1em ;
   border-radius: 20px;
   border: none;
-} */
+}
 
 .mobile-navigation-toggle {
   display: none;
@@ -127,7 +127,7 @@ button {
 
 #user-input-section {
   background-color: var(--Dark-Violet);
-  background-image: url(/project12/images/bg-shorten-mobile.svg);
+  background-image: url(/images/bg-shorten-mobile.svg);
 
   padding: 2em 1.2em;
 
@@ -205,11 +205,6 @@ button {
   color: #ffff;
 }
 
-
-/* #user-input-section input[type="placeholder"] {
-  font-size: .8rem;
-} */
-
 .client section h2 {
   margin-bottom: .8em;
 }
@@ -230,7 +225,7 @@ button {
 /* PROMOTION SECTION */
 #promotion-section {
   background-color: var(--Dark-Violet);
-  background-image: url(/project12/images/bg-boost-mobile.svg);
+  background-image: url(/images/bg-boost-mobile.svg);
 
   text-align: center;
   color: #fff;
@@ -270,9 +265,6 @@ button {
 }
 
 
-
-/* TYPOGRAPHY
---------------------- */
 p {
   color: var(--Grayish-Violet);
 }
@@ -461,7 +453,7 @@ MOBILE NAVIGATION AND OTHER STYLES
 
   /* CLIENT SECTION */
   #user-input-section {
-      background-image: url(/project12/images/bg-shorten-desktop.svg);
+      background-image: url(/images/bg-shorten-desktop.svg);
       width: 100%;
       top: -70px;
   }
@@ -505,19 +497,12 @@ MOBILE NAVIGATION AND OTHER STYLES
       display: flex;
       gap: 50px;
       text-align: start;
-
-      /* border: 2px solid red; */
   }
 
   .client .brand-services article {
       padding-left: 2em;
       margin-top: 0;
-      /* padding-right: 1.2em; */
   }
-
-  /* .client .brand-services:nth-child(2) {
-      margin-top: 2em;
-  } */
 
   .second-child {
       margin-top: 6em;

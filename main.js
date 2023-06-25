@@ -1,3 +1,6 @@
+import axios from "axios"
+import ClipboardJS from "clipboard";
+
 const mobileNav = document.querySelector('.navigation')
 const navToggle = document.querySelector('.mobile-navigation-toggle');
 
@@ -62,9 +65,3 @@ form.addEventListener('submit', (e) => {
     e.preventDefault()
     shortenUrlLink();
 })
-
-// observations
-// when using async await with the shrtcode api, its gives an error message (CORS preflight did not succeed)
-// async function apicall() {
-
-// }
